@@ -16,3 +16,9 @@ If you wish to use an existing theme to kickstart yours, just copy the files fro
 
 ![image](https://user-images.githubusercontent.com/11990914/98444273-0bbc9100-2111-11eb-996a-94ca79e6a334.png)
 
+## Running PHP only when this theme is active
+
+You can include a `theme.php` file in the them folder (`my-theme`). It will automatically be loaded if present. 
+
+This is useful if you wish to add specific hooks for that theme, or load additional scripts. You can see examples of this in existing themes, such as [Float](https://github.com/marcusig/woocommerce-product-customizer/blob/master/src/inc/themes/float/theme.php)
+
