@@ -18,8 +18,8 @@ function my_product_configurator_custom_theme_init() {
 	if ( function_exists( 'mkl_pc' ) && is_callable( [ mkl_pc( 'themes' ), 'register_theme' ] ) ) {
 		/**
 		 * Edit the slug of your theme here:
-		 * - mytheme is the slug
-		 * - my-theme is the name of the folder in this plugin. You can rename it if you wish.
+		 * - 'mytheme' is the slug, used for filtering or getting the theme from the Themes class.
+		 * - 'my-theme' is the folder containing the theme files in this plugin. You can rename it if you wish.
 		 * - The name of the theme itself, as displayed in the admin, is set in the file style.css, within the folder "my-theme"
 		 */
 		mkl_pc( 'themes' )->register_theme( 'mytheme', plugin_dir_path( __FILE__ ) . 'my-theme' );
